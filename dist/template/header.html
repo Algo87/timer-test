@@ -1,0 +1,165 @@
+<div class="wrapper-header">
+    <header class="header">
+
+        <div class="header-left-part">
+            <div class="burger burger-left">
+                <div class="burger-part"></div>
+            </div>
+
+            <!--<div class="account-info-container">-->
+            <!--<div class="account-info-img"></div>-->
+            <!--<div class="account-info-desc">-->
+            <!--<span class="account-info-name">Логойка: Центр клиентов</span>-->
+            <!--<span class="account-info-status">статус аккаунта</span>-->
+            <!--</div>-->
+
+            <!--</div>-->
+
+        </div>
+        <div class="header-center-part b-dropdown-wrapper">
+            <div class="b-dropdown-user">
+
+                <div class="b-dropdown-itm"><a href="#"><span>Вопросы ответы (FAQ)</span></a></div>
+                <div class="b-dropdown-itm"><a href="#"><span>Инструкции</span></a></div>
+
+            </div>
+            <div class="help-container">
+                <div class="help-img"></div>
+                <span class="help-title">Помощь</span>
+            </div>
+        </div>
+        <div class="header-right-part b-dropdown-wrapper">
+
+            <div class="b-dropdown-user">
+
+                <div class="b-dropdown-itm"><a href="#"><span class="change-psw-img"></span>Изменить пароль</a></div>
+                <div class="b-dropdown-itm"><a href="javascript:;" id="settings-profile-link"><span
+                        class="account-settings-img"></span>Настройки профиля</a>
+                </div>
+                <div class="b-dropdown-itm"><a href="#"><span class="exit-img"></span>Выход</a></div>
+            </div>
+            <div class="header-right-part-avatar">
+                <!--<img src="img/avatar.svg">-->
+                <img src="img/active-icon.svg">
+            </div>
+            <div class="header-right-part-user">
+                <div class="header-right-part-user-name">Алексей</div>
+                <div class="header-right-part-user-client">ИП Лагойка (клиент)</div>
+
+
+            </div>
+            <div class="header-right-part-sm-icon">
+                <img src="../img/settin.svg"/>
+            </div>
+        </div>
+
+        <div id="profile-settings" style="display: none;">
+            <div class="profile-settings-header popup-header">Настройки профиля</div>
+            <div class="profile-settings-body popup-header">
+                <form id="profile-settings-form">
+                    <div class="input-wrap">
+                        <label for="profile-settings-input-1">Фамилия</label>
+                        <input id="profile-settings-input-1" name="profile-settings-input-1"
+                               placeholder="Введите фамилию" type="text"/>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="profile-settings-input-2">Имя</label>
+                        <input id="profile-settings-input-2" name="profile-settings-input-2" placeholder="Введите имя"
+                               type="text"/>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="profile-settings-input-3">Отчество</label>
+                        <input id="profile-settings-input-3" name="profile-settings-input-3"
+                               placeholder="Введите отчество" type="text"/>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="profile-settings-input-4">E-mail</label>
+                        <input id="profile-settings-input-4" name="profile-settings-input-4"
+                               placeholder="Введите E-mail (логин в клиентской части)" readonly
+                               type="email"/>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="profile-settings-input-5">E-mail</label>
+                        <input id="profile-settings-input-5" name="profile-settings-input-5"
+                               placeholder="Введите E-mail (для уведомлений)"
+                               type="email"/>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="profile-settings-input-6">Телефон</label>
+                        <input id="profile-settings-input-6" name="profile-settings-input-6"
+                               placeholder="Введите телефон для СМС уведомлений"
+                               type="email"/>
+                    </div>
+
+                    <div class="input-checkbox-wrap">
+                        <div>
+                            <input class="b-filter__el-it-input" id="profile-settings-input-7"
+                                   name="profile-settings-input-7"
+                                   type="checkbox">
+                            <label class="label" for="profile-settings-input-7">Уведомлять об окончании средств на
+                                аккаунте</label>
+                        </div>
+                    </div>
+
+                    <div class="input-wrap">
+                        <label for="profile-settings-input-8">Дней</label>
+                        <input id="profile-settings-input-8" name="profile-settings-input-8" placeholder="-"
+                               type="email"/>
+                    </div>
+
+                    <div class="input-checkbox-wrap">
+                        <div>
+                            <input class="b-filter__el-it-input" id="profile-settings-input-9"
+                                   name="profile-settings-input-9"
+                                   type="checkbox">
+                            <label class="label" for="profile-settings-input-9">Уведомлять о зачислении средств на
+                                аккаунт</label>
+                        </div>
+                    </div>
+                    <div class="input-checkbox-wrap">
+
+                        <div class="input-checkbox-wrap-item">
+                            <input class="b-filter__el-it-input" id="profile-settings-input-10"
+                                   name="profile-settings-input-10"
+                                   type="checkbox">
+                            <label class="label" for="profile-settings-input-10">СМС уведомления</label>
+                        </div>
+                        <div class="input-checkbox-wrap-item">
+                            <input class="b-filter__el-it-input" id="profile-settings-input-11"
+                                   name="profile-settings-input-11"
+                                   type="checkbox">
+                            <label class="label" for="profile-settings-input-11">E-mail уведомления</label>
+                        </div>
+
+                    </div>
+                    <div class="btn-container">
+                        <button class="blue-btn" id="save-profile-settings" type="submit">Сохранить</button>
+                        <button class="light-btn" id="reset-profile-settings" type="reset">Отмена</button>
+                    </div>
+
+                    <div class="preloader-container">
+
+                        <svg class="lds-eclipse" height="200px" preserveAspectRatio="xMidYMid"
+                             style="animation-play-state: running; animation-delay: 0s; background: none;"
+                             viewBox="0 0 100 100" width="200px"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 50A30 30 0 0 0 80 50A30 32 0 0 1 20 50" fill="#00b9ff" ng-attr-d="{{config.pathCmd}}"
+                                  ng-attr-fill="{{config.color}}" stroke="none"
+                                  style="animation-play-state: running; animation-delay: 0s;"
+                                  transform="rotate(144 50 51)">
+                                <animateTransform attributeName="transform" begin="0s" calcMode="linear"
+                                                  dur="1s" keyTimes="0;1" repeatCount="indefinite"
+                                                  style="animation-play-state: running; animation-delay: 0s;"
+                                                  type="rotate"
+                                                  values="0 50 51;360 50 51">
+
+                                </animateTransform>
+                            </path>
+                        </svg>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </header>
+</div>
